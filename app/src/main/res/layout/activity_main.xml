@@ -10,7 +10,52 @@
     tools:context="com.example.trannh08.ad010intentsandfilters_withviewaction.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Intent Example"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_below="@+id/textView" />
+
+    <Button
+        android:id="@+id/button_startBrowserView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignTop="@+id/editText"
+        android:text="Start browsing with view action" />
+
+    <Button
+        android:id="@+id/button_startBrowserLaunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/button_startBrowserView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignStart="@+id/button_startBrowserView"
+        android:layout_below="@+id/button_startBrowserView"
+        android:text="Start browsing with launch action" />
+
+    <Button
+        android:id="@+id/button_exceptionalCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/button_startBrowserLaunch"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignStart="@+id/button_startBrowserLaunch"
+        android:layout_below="@+id/button_startBrowserLaunch"
+        android:text="Exceptional condition" />
 </RelativeLayout>
